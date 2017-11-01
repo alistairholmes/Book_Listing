@@ -1,5 +1,7 @@
 package com.example.alistair.booklistingapp;
 
+import java.net.URL;
+
 public class Book {
 
     // Create variables for the book info constructor
@@ -11,13 +13,13 @@ public class Book {
     private String mAuthor;
 
     // Image of the book ( url )
-    private String mImage;
+    private URL mImage;
 
     // Url to book webpage
     private String mUrl;
 
     // Create constructor accepting variables above
-    public Book(String title, String author, String image) {
+    public Book(String title, String author, URL image) {
         mTitle = title;
         mAuthor = author;
         mImage = image;
@@ -32,7 +34,7 @@ public class Book {
         return mAuthor;
     }
 
-    public String getImage() {
+    public URL getImage() {
         return mImage;
     }
 
