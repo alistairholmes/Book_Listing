@@ -11,3 +11,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+
+
+// Todo The network call occurs off the UI thread using an AsyncTask or similar threading object.
