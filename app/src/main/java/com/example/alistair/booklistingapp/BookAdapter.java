@@ -11,11 +11,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 public class BookAdapter extends ArrayAdapter<Book> {
 
-    public BookAdapter(Context context, List<Book> bookList) {
+    public BookAdapter(Context context, ArrayList<Book> bookList) {
         super(context, 0, bookList);
     }
 
@@ -39,11 +40,6 @@ public class BookAdapter extends ArrayAdapter<Book> {
         TextView authorTextView = (TextView) listItemView.findViewById(R.id.author_text_view);
         // Display the author of the book in that text view
         authorTextView.setText(currentBook.getAuthor());
-
-        // Assign to the image id in the layout
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image_view);
-        // Display the image of the book in that image view
-
 
 
         return listItemView;
